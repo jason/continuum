@@ -30,10 +30,9 @@ ul#menu {
   width: 100%;
   li.logo {
     flex: 0 1 80%;
-    .active {
-      background-color: blue;
-    }
+
   }
+
   a {
     text-decoration: none;
     color: $grey;
@@ -49,7 +48,9 @@ ul#menu {
     border-radius: 3px;
     margin-left: 2em;
   }
-
+  a.active {
+    color: #0e44af;
+  }
 }
 
 header .logo {
@@ -159,17 +160,17 @@ footer {
 }
 
 .location {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @extend %flex;
   .banner {
   background-image: url("../images/banner-location.png");
   height: 300px;
   background-width: 100%;
+
   }
   section.main {
-    width: 80%;
     @extend %flex;
+    margin: auto;
+    width: 80%;
     p:first-letter { font-size: 3em; font-family: $PT-Serif; color: black; }
     p:first-line { line-height: 1.5em;}
 

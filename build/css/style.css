@@ -557,7 +557,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.home, .location section.main, .about, .about .main, .schedule, .schedule .main {
+.home, .location, .location section.main, .about, .about .main, .schedule, .schedule .main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -678,8 +678,6 @@ ul#menu {
     -webkit-flex: 0 1 80%;
         -ms-flex: 0 1 80%;
             flex: 0 1 80%; }
-    ul#menu li.logo .active {
-      background-color: blue; }
   ul#menu a {
     text-decoration: none;
     color: #818181;
@@ -692,6 +690,8 @@ ul#menu {
     color: white;
     border-radius: 3px;
     margin-left: 2em; }
+  ul#menu a.active {
+    color: #0e44af; }
 
 header .logo {
   padding: 0px 1px 0px 3px;
@@ -814,49 +814,39 @@ footer {
     font-size: 1.5em;
     margin: 0.75em 0 0.75em 0; }
 
-.location {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .location .banner {
-    background-image: url("../images/banner-location.png");
-    height: 300px;
-    background-width: 100%; }
-  .location section.main {
-    width: 80%; }
-    .location section.main p:first-letter {
-      font-size: 3em;
-      font-family: "PT Serif", serif;
-      color: black; }
-    .location section.main p:first-line {
-      line-height: 1.5em; }
-    .location section.main > div {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-flow: row;
-          -ms-flex-flow: row;
-              flex-flow: row;
-      margin-bottom: 1rem; }
-      .location section.main > div p {
-        width: 50%;
-        margin-right: 2rem; }
-      .location section.main > div img {
-        width: 50%;
-        height: 50%; }
-      .location section.main > div img:first-child {
-        margin-right: 2rem; }
-      .location section.main > div iframe {
-        width: 50%; }
+.location .banner {
+  background-image: url("../images/banner-location.png");
+  height: 300px;
+  background-width: 100%; }
+
+.location section.main {
+  margin: auto;
+  width: 80%; }
+  .location section.main p:first-letter {
+    font-size: 3em;
+    font-family: "PT Serif", serif;
+    color: black; }
+  .location section.main p:first-line {
+    line-height: 1.5em; }
+  .location section.main > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    margin-bottom: 1rem; }
+    .location section.main > div p {
+      width: 50%;
+      margin-right: 2rem; }
+    .location section.main > div img {
+      width: 50%;
+      height: 50%; }
+    .location section.main > div img:first-child {
+      margin-right: 2rem; }
+    .location section.main > div iframe {
+      width: 50%; }
 
 .about .banner {
   background-image: url("../images/banner-about.png");
