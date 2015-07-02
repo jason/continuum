@@ -48,7 +48,7 @@ ul#menu {
     border-radius: 3px;
     margin-left: 2em;
   }
-  a.active {
+  li.active > a {
     color: #0e44af;
   }
 }

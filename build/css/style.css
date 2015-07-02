@@ -690,7 +690,7 @@ ul#menu {
     color: white;
     border-radius: 3px;
     margin-left: 2em; }
-  ul#menu a.active {
+  ul#menu li.active > a {
     color: #0e44af; }
 
 header .logo {
