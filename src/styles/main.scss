@@ -20,12 +20,20 @@ header {
   z-index: 4;
 }
 
-nav {
+ul#menu {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-right: 10em;
-
+  list-style-type: none;
+  width: 100%;
+  li.logo {
+    flex: 0 1 80%;
+    .active {
+      background-color: blue;
+    }
+  }
   a {
     text-decoration: none;
     color: $grey;
@@ -39,7 +47,9 @@ nav {
     background-color: rgb(200, 159, 32);
     color: white;
     border-radius: 3px;
+    margin-left: 2em;
   }
+
 }
 
 header .logo {

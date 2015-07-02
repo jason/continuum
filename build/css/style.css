@@ -657,7 +657,7 @@ header {
   background-color: #f1f1f1;
   z-index: 4; }
 
-nav {
+ul#menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -666,18 +666,32 @@ nav {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 10em; }
-  nav a {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10em;
+  list-style-type: none;
+  width: 100%; }
+  ul#menu li.logo {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 80%;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%; }
+    ul#menu li.logo .active {
+      background-color: blue; }
+  ul#menu a {
     text-decoration: none;
     color: #818181;
     padding: 5px 20px;
     font-size: 0.8em; }
-  nav a:hover {
+  ul#menu a:hover {
     color: #cccdce; }
-  nav a.register {
+  ul#menu a.register {
     background-color: #c89f20;
     color: white;
-    border-radius: 3px; }
+    border-radius: 3px;
+    margin-left: 2em; }
 
 header .logo {
   padding: 0px 1px 0px 3px;
