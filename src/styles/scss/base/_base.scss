@@ -1,0 +1,53 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
+
+$grey: rgb(129, 129, 129);
+$lightgrey: rgb(180, 180, 180);
+$blue: rgb(36, 101, 156)
+$PT-Sans: 'PT Sans', sans-serif;
+$PT-Serif: 'PT Serif', serif;
+
+%column {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  @extend %column;
+}
+body {
+  @extend %column;
+  font-family: $PT-Sans;
+}
+
+h1 {
+  font-family: $PT-Serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  color: hsl(0, 0, 50);
+  line-height: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.hero {
+  background-size: 100% 100%;
+  flex: 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+

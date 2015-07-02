@@ -1,0 +1,8 @@
+header
+  .logo
+    a(href="#home")
+      img(src="images/logo-nav-bar-continuumsf.png" width="100" height="75")
+  nav
+    each name, url in {'#about':'ABOUT', '#location':'LOCATION', '#schedule':'SCHEDULE', '#visa':'VISA', '#partner':'PARTNER'}
+      a(href="#{url}") #{name}
+    a.register(href='#') REGISTER
