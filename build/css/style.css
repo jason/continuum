@@ -654,10 +654,9 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   box-shadow: 0 1px 2px 0 rgba(200, 200, 200, 0.4);
-  background-color: #f1f1f1;
-  z-index: 4; }
+  background-color: #f1f1f1; }
 
-ul#menu {
+header ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -673,24 +672,24 @@ ul#menu {
   padding-right: 10em;
   list-style-type: none;
   width: 100%; }
-  ul#menu li.logo {
+  header ul li.logo {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 80%;
         -ms-flex: 0 1 80%;
             flex: 0 1 80%; }
-  ul#menu a {
+  header ul a {
     text-decoration: none;
     color: #818181;
     padding: 5px 20px;
     font-size: 0.8em; }
-  ul#menu a:hover {
+  header ul a:hover {
     color: #cccdce; }
-  ul#menu a.register {
+  header ul a.register {
     background-color: #c89f20;
     color: white;
     border-radius: 3px;
     margin-left: 2em; }
-  ul#menu li.active > a {
+  header ul li.active > a {
     color: #0e44af; }
 
 header .logo {
@@ -750,8 +749,15 @@ header .logo {
     text-align: center;
     width: 100%; }
   .discover p {
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    margin: auto; }
   .discover ul {
+    width: 100%;
+    margin: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -759,7 +765,8 @@ header .logo {
     .discover ul img {
       margin-left: auto;
       margin-right: auto;
-      display: block; }
+      display: block;
+      margin-bottom: 2rem; }
     .discover ul li {
       text-decoration: none;
       list-style: none;

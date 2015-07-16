@@ -1,9 +1,9 @@
 header
-  ul#menu
-    li.logo(data-menuanchor='home')
+  ul
+    li.logo
       a(href="#home1")
         img(src="images/logo-nav-bar-continuumsf.png" width="100" height="75")
-    each name, url in {'about1':'ABOUT', 'location1':'LOCATION', 'schedule1':'SCHEDULE', 'visa':'VISA', '#partner':'PARTNER'}
+    each name, url in {'about':'ABOUT', 'location':'LOCATION', 'schedule':'SCHEDULE', 'visa':'VISA', 'partner':'PARTNER'}
       li(data-menuanchor="#{url}")
         a(href="##{url}") #{name}
     li

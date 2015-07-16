@@ -1,7 +1,6 @@
 {
   "name": "continuumsf",
   "dependencies": {
-    "jquery": "~2.1.4",
-    "fullpage.js": "~2.6.6"
+    "jquery": "~2.1.4"
   }
 }
