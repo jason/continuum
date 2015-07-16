@@ -18420,8 +18420,8 @@ return jQuery;
 
 }));
 
-$document.ready(function() {$('a[href^="#"]').on('click', function(event) {
-  var target = $(this.href);
+$(document).ready(function() {$('a[href^="#"]').on('click', function(event) {
+  var target = $(this.hash);
   if( target.length ) {
       event.preventDefault();
       $('html, body').animate({
