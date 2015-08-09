@@ -3,38 +3,56 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
-$grey: rgb(129, 129, 129);
-$lightgrey: rgb(180, 180, 180);
+$black: #000;
 $blue: rgb(36, 101, 156);
-$PT-Sans: 'PT Sans', sans-serif;
-$PT-Serif: 'PT Serif', serif;
+$deepblue: rgb(4, 0, 151);
+$gold: hsla(50, 81%, 50%, 1);
+$grey: rgb(129, 129, 129);
+$lightblue: rgb(239, 245, 247);
+$lightgrey: rgb(180, 180, 180);
+$white: rgb(241, 241, 241);
+$aqua: hsla(185, 30%, 80%, 1);
+$pt-sans: 'PT Sans', sans-serif;
+$pt-serif: 'PT Serif', serif;
 
-%column {
+@mixin column {
   display: flex;
   flex-direction: column;
 }
+
 %flex {
   display: flex;
   justify-content: center;
+
+}
+
+@mixin flex {
+  display: flex;
   flex-wrap: wrap;
 }
+
 section {
   display: flex;
-  justify-items: center;
+  justify-content: center;
 }
-  .main {
-    padding-top: 4rem;
-  }
+
+.main {
+  padding-top: 4rem;
+}
+
 body {
-  font-family: $PT-Sans;
-  background-color: rgb(241,241,241);
+  background-color: $lightblue;
+  font-family: $pt-sans;
 }
 
 h1 {
-  font-family: $PT-Serif;
+  display: block;
+  font-family: $pt-serif;
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
   font-weight: 400;
+  margin-bottom: 1.5rem;
+  text-align: center;
+
 }
 
 h2 {
@@ -45,29 +63,10 @@ p {
   color: hsl(0, 0, 50);
   line-height: 1.75rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.logo {
-  font-weight: 700;
-  letter-spacing: 0.1em;
+ul {
+  list-style-type: none;
 }
 
-.banner {
-  background-size: 100% 100%;
-  flex: 1 0 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.page-title {
-    font-size: 3em;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    color: white;
-}
-
-.banner:nth-child(n+1) {
-  margin-top: 7.2em;
-}

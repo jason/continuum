@@ -8,10 +8,12 @@ var dest = 'build/';
 
 gulp.task('css', function() {
     gulp.src(plugins.mainBowerFiles().concat('src/styles/**/*.scss'))
+        .pipe(plugins.sourcemaps.init())
         .pipe(plugins.filter('*.scss'))
  		.pipe(plugins.sass().on('error', plugins.sass.logError))
  		.pipe(plugins.autoprefixer('last 2 version'))
 // 		.pipe(minifyCSS())
+        .pipe(plugins.sourcemaps.write())
  		.pipe(plugins.rename('style.css'))
         .pipe(gulp.dest('build/css'))
         .pipe(browserSync.reload({stream: true}));

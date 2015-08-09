@@ -1,0 +1,23 @@
+.banner {
+  background-image: url('../images/csf-asset-banner-home.png');
+  background-size: 100% 100%;
+  color: $white;
+  height: 500px;
+  margin-top: 5.2em;
+  width: 100%;
+
+  img {
+    display: block;
+    padding-top: 5rem;
+    margin-left: auto;
+    margin-right: auto
+
+  }
+  &__date {
+    flex: 1 0 100%;
+    font-size: 1.5rem;
+    color: $white;
+    padding-top: 4rem;
+    text-align: center;
+  }
+}

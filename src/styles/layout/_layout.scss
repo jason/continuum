@@ -1,0 +1,32 @@
+.l-constrained {
+  padding-left: 16em;
+  padding-right: 16em;
+  margin: auto;
+  }
+
+.l-section {
+  border-bottom: 3px solid $aqua;
+  display: block;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+}
+
+.l-split {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+
+  img {
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li {
+    margin: 0 4em 3em 0;
+    max-width: 33%;
+  }
+}
