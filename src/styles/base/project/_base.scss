@@ -5,15 +5,17 @@
 
 $black: #000;
 $blue: rgb(36, 101, 156);
-$deepblue: rgb(4, 0, 151);
+$deepblue: hsl(242, 100, 29.6);
+$rollblue: hsla(242, 100, 29.6, .3);
 $gold: hsla(50, 81%, 50%, 1);
 $grey: rgb(129, 129, 129);
 $lightblue: rgb(239, 245, 247);
 $lightgrey: rgb(180, 180, 180);
-$white: rgb(241, 241, 241);
+$offwhite: rgb(241, 241, 241);
 $aqua: hsla(185, 30%, 80%, 1);
 $pt-sans: 'PT Sans', sans-serif;
 $pt-serif: 'PT Serif', serif;
+$white: #fff;
 
 @mixin column {
   display: flex;
@@ -23,7 +25,6 @@ $pt-serif: 'PT Serif', serif;
 %flex {
   display: flex;
   justify-content: center;
-
 }
 
 @mixin flex {
@@ -50,7 +51,7 @@ h1 {
   font-family: $pt-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
   width: 100%;
 }
@@ -70,3 +71,12 @@ ul {
   list-style-type: none;
 }
 
+.large-icon {
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.ch {
+  font-family: Georgia, "Times New Roman", "FangSong", "仿宋", STFangSong, "华文仿宋", serif;
+}

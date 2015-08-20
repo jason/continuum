@@ -14,7 +14,7 @@ $(document).ready(function() {
   if( target.length ) {
       event.preventDefault();
       $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 85
       }, 1000);
     }
   });
@@ -24,7 +24,7 @@ $(document).ready(function() {
     var selectedElement = null;
     for (var idx = jqSections.length -1 ; idx >= 0; idx--) {
       var sectionItem = jqSections[idx];
-      if (scrollY > sectionItem.offsetTop) {
+      if (scrollY + 95 > sectionItem.offsetTop) {
         selectedElement = sectionItem;
         break;
       }
@@ -39,4 +39,22 @@ $(document).ready(function() {
   };
 
   $(window).scroll(onScrollWindow);
+
+    // Create a map object
+  var map = new YMap(document.getElementById('map'));
+
+  // Add map type control
+  map.addTypeControl();
+
+  // Add map zoom (long) control
+  map.addZoomLong();
+
+  // Add the Pan Control
+  map.addPanControl();
+
+  // Set map type to either of: YAHOO_MAP_SAT, YAHOO_MAP_HYB, YAHOO_MAP_REG
+  map.setMapType(YAHOO_MAP_REG);
+
+  // Display the map centered on a geocoded location
+  map.drawZoomAndCenter("New York, NY", 4);
 });

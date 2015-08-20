@@ -1,10 +1,10 @@
 header
   ul
     li.logo
-      a(href="#home1")
+      a(href="#home")
         img(src="images/csf-asset-navlogo.png" width="275" height="50")
-    each name, url in {'schedule':'SCHEDULE', 'location':'LOCATION', 'sponsor':'SPONSOR', 'contact':'CONTACT', 'about':'ABOUT'}
+    each name, url in {'schedule':'SCHEDULE', 'sponsor':'SPONSOR', 'location':'LOCATION', 'about':'ABOUT'}
       li(data-menuanchor="#{url}")
         a(href="##{url}") #{name}
     li
-      a.register(href='#') REGISTER
+      a.register(href='#tickets') TICKETS

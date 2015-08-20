@@ -18436,7 +18436,7 @@ $(document).ready(function() {
   if( target.length ) {
       event.preventDefault();
       $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 85
       }, 1000);
     }
   });
@@ -18446,7 +18446,7 @@ $(document).ready(function() {
     var selectedElement = null;
     for (var idx = jqSections.length -1 ; idx >= 0; idx--) {
       var sectionItem = jqSections[idx];
-      if (scrollY > sectionItem.offsetTop) {
+      if (scrollY + 95 > sectionItem.offsetTop) {
         selectedElement = sectionItem;
         break;
       }

@@ -1,0 +1,114 @@
+.media {
+  background-color: $white;
+  border-radius: 4px;
+  color: $grey;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  padding-bottom: .5rem;
+  width: 100%;
+
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  &__button {
+    background-color: $white;
+    border: 3px solid $deepblue;
+    border-radius: 5px;
+    color: $deepblue;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    padding: .4rem 2rem;
+    text-align: center;
+    width: 15%;
+  }
+
+  img {
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+
+  iframe {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.media:nth-child(2) {
+  margin-right: 0;
+}
+
+.topborder {
+  border-top: 5px solid $deepblue;
+  }
+
+.l-split {
+  > a {
+    background-color: $white;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    padding-bottom: .5rem;
+    text-decoration: none;
+    width: 100%;
+
+
+    .boothimage {
+      background-image: url('/images/csf-asset-booth.png');
+      background-size: 100%;
+      height: 87px;
+      margin: auto;
+      margin-top: 40px;
+      width: 90px;
+    }
+
+    .tableimage {
+      background-image: url('/images/csf-asset-table.png');
+      background-size: 100%;
+      height: 43px;
+      margin: auto;
+      margin-top: 84px;
+      width: 90px;
+      }
+
+    p {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    > a:nth-child(2) {
+      margin-right: 0;
+    }
+
+  }
+
+  a:hover {
+
+
+    .topborder {
+      border-top: 5px solid $rollblue;
+    }
+
+    .boothimage {
+      background-image: url('/images/csf-asset-booth__hover.png');
+    }
+
+    .tableimage {
+      background-image: url('/images/csf-asset-table__hover.png');
+    }
+
+    .media__button {
+      border: 3px solid $rollblue;
+      color: $rollblue;
+    }
+  }
+}

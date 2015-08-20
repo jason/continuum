@@ -2,10 +2,11 @@
 @import 'base/project/base';
 @import 'layout/layout';
 @import 'components/banner';
+@import 'components/media';
 
 header {
   align-items: center;
-  background-color: $white;
+  background-color: $offwhite;
   box-shadow: 0 1px 2px 0 rgba(200, 200, 200, .4);
   display: flex;
   justify-content: space-between;
@@ -39,7 +40,7 @@ header {
 
   a.register {
     background-color: rgb(200, 159, 32);
-    color: $white;
+    color: $offwhite;
     border-radius: 3px;
     margin-left: 2em;
   }
@@ -49,164 +50,37 @@ header {
   }
 }
 
-.large-icon {
-  display: block;
-  margin: auto;
-}
-
-.discover {
-  background-color: rgb(230, 235, 235);
-  display: flex;
-  flex: 1 0 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 4em;
-
-  h1 {
-    text-align: center;
-    width: 100%;
-  }
-
-  p {
-    margin: auto;
-    padding-bottom: 2em;
-  }
-
-  ul {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
-
-    img {
-      display: block;
-      margin-bottom: 2rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    li {
-      list-style: none;
-      margin: 0 4em 3em 0;
-      max-width: 250px;
-      text-decoration: none;
-    }
-  }
-}
-
-.category {
-  margin: 1em 3em;
-  max-width: 200px;
-}
-
-section.register {
-  align-items: center;
-  background: linear-gradient(90deg, rgb(13, 54, 164), rgb(25, 200, 248));
-  color: $white;
-  display: flex;
-  flex: 1 0 100%;
-  justify-content: center;
-  min-height: 10em;
-
-  h2 {
-    padding-right: 2em;
-  }
-
-  .button {
-    border: 2px solid $white;
-    border-radius: 3px;
-    font-size: 1.2em;
-    padding: .25em 1.5em;
-  }
-}
-
 footer {
   @extend %column;
-  align-items: center;
-  padding-top: 2em;
+  background: linear-gradient(90deg, rgb(13, 54, 164), rgb(25, 200, 248));
+  padding: 1rem 0;
 
   p {
+    color: $lightgrey;
     font-family: $pt-serif;
   }
 
   .logo {
     border: 4px solid $lightgrey;
     color: $lightgrey;
+    display: block;
     font-size: 1.5em;
-    margin: .75em 0;
-    padding: 0 1px 0 3px;
-  }
-}
-
-.location {
-  @extend %flex;
-
-  section.main {
-    @extend %flex;
     margin: auto;
-    width: 80%;
-
-    >div {
-      display: flex;
-      flex-flow: row;
-      margin-bottom: 1rem;
-
-      p {
-        margin-right: 2rem;
-        width: 50%;
-      }
-
-      img {
-        height: 50%;
-        width: 50%;
-      }
-
-      img:first-child {
-        margin-right: 2rem;
-      }
-
-      iframe {
-        width: 50%;
-      }
-    }
+    padding: 0 1px 0 3px;
+    width: 5.8rem;
   }
 }
 
-.about {
-  @extend %flex;
-
-  .main {
-    @extend %flex;
-
-    margin-bottom: 4em;
-
-    h1 {
-      flex: 0 1 100%;
-    }
-
-    p {
-      padding: 0 12em;
-    }
-
-    img {
-      margin: 3em 0;
-    }
-  }
-}
-
-.schedule {
-  @extend %flex;
-
-  .main {
-    @extend %flex;
-    background-color: rgb(226, 232, 235);
-    padding: 2rem 0;
-    width: 100%;
+#schedule {
+  .l-section {
+    display: block;
+    padding: 1.5rem 0;
   }
 
   table {
     border-collapse: separate;
     border-spacing: 0 5px;
+    margin: auto;
   }
 
   tr {
@@ -240,4 +114,8 @@ footer {
   .speaker {
     color: rgb(49, 64, 73);
   }
+}
+
+#home ul {
+  padding-left: 0;
 }

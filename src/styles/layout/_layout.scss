@@ -1,20 +1,19 @@
 .l-constrained {
-  padding-left: 16em;
-  padding-right: 16em;
   margin: auto;
+  padding: 1.5rem 16rem;
   }
 
 .l-section {
   border-bottom: 3px solid $aqua;
   display: block;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 2rem;
 
 }
 
 .l-split {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
   width: 100%;
 
@@ -29,4 +28,8 @@
     margin: 0 4em 3em 0;
     max-width: 33%;
   }
+}
+
+.section {
+  padding-top: 2.5rem;
 }
