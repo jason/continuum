@@ -1,29 +1,24 @@
 .section#home
 	.banner
 		img(src="images/csf-asset-logo-hero.png" width="346" height="300")
-		.banner__date
-			| NOVEMBER 12-13, 2015 | PIER 27, SAN FRANCISCO
+		p this is a test
+		.banner__date=home.when
 
 	.l-section.l-constrained
 			img.large-icon(src='images/chinasf---icon-0.png', height='177', width='160')
-			h1 Build Business Across the Pacific
-			p
-				| Take your company global by networking with over 1,000 venture capitalists, entrepreneurs, and
-				| government officials from China and the U.S. Learn what it takes to build a Transpacific
-				| business; create opportunities at ContinuumSF.
+			h1=home.headline
+			p=home.describe
 	.l-section.l-constrained
-		h1 Theme
-		p
-			| ContinuumSF connects you to top caliber technology, professional services, agricultural and consumer good companies
+		h1=home.subSectionHead
+		p=home.subSectionCopy
 		ul.l-split
 			li
 				img(src='images/chinasf---icon-1.png', height='150', width='150', alt='')
-				p
-					| Smartphones, wearables, ecommerce, biotech, gaming, artificial intelligence, smart home technology
+				p=home.techCopy
 			li
 				img(src='images/chinasf---icon-2.png', height='150', width='150', alt='')
 				p
-					p Education, travel, medical services and insurance
+					p=home.servicesCopy
 			li
 				img(src='images/chinasf---icon-3.png', height='150', width='150', alt='')
-				p Health, beauty, and agricultural products
+				p=home.cgCopy

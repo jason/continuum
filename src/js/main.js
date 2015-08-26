@@ -37,24 +37,10 @@ $(document).ready(function() {
     jqNavs.filter('[data-menuanchor="' + activeSection + '"]').addClass('active');
     // console.debug('selectedElement', selectedElement );
   };
-
+  $(function(){
+    $("header").sticky({topSpacing:0});
+  });
   $(window).scroll(onScrollWindow);
 
-    // Create a map object
-  var map = new YMap(document.getElementById('map'));
 
-  // Add map type control
-  map.addTypeControl();
-
-  // Add map zoom (long) control
-  map.addZoomLong();
-
-  // Add the Pan Control
-  map.addPanControl();
-
-  // Set map type to either of: YAHOO_MAP_SAT, YAHOO_MAP_HYB, YAHOO_MAP_REG
-  map.setMapType(YAHOO_MAP_REG);
-
-  // Display the map centered on a geocoded location
-  map.drawZoomAndCenter("New York, NY", 4);
 });

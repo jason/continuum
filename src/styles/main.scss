@@ -4,14 +4,23 @@
 @import 'components/banner';
 @import 'components/media';
 
+.language {
+  background-color: $lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    margin: 1rem 0;
+    text-decoration: none;
+  }
+}
+
 header {
   align-items: center;
   background-color: $offwhite;
   box-shadow: 0 1px 2px 0 rgba(200, 200, 200, .4);
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
   width: 100%;
 
   ul {
@@ -31,6 +40,7 @@ header {
         font-size: .8em;
         padding: 5px 20px;
         text-decoration: none;
+        white-space: nowrap;
       }
 
       a:hover {
@@ -70,7 +80,9 @@ footer {
     width: 5.8rem;
   }
 }
-
+#home.section {
+  padding-top: 0;
+}
 #schedule {
   .l-section {
     display: block;

@@ -1,35 +1,26 @@
 .section#sponsor
-    h1 Sponsor
+    h1=sponsor.h1
   .l-section.l-constrained
-    img.large-icon(src='images/csf-asset-sponsors.png' height="105" width="120")
-    p
-      | If you are interested in becoming a sponsor, please #[a(href="mailto:chinasf@sfced.org") email], 
-      | or call us at #[a(href="tel:1-415-352-8873") 1 415 352 8873].
+    img.large-icon(src='images/csf-icon-sponsors.png' height="100.5" width="100.5")
+    p !{sponsor.h1Copy}
   .l-section.l-constrained
-    h1 Exhibit
-    p
-      | Showcase your company to over 1,000 business professionals from the U.S. and China.
-      | Booths are limited, so register and guarantee your spot today!
+    h1=sponsor.h2
+    img.large-icon(src='images/csf-icon-exhibit.png' height="100.5" width="100.5")
+    p=sponsor.h2Copy
     .l-split
       a(href='https://continuumsf.wufoo.com/forms/z24x9uh1tboczn/')
         .media.topborder
           .boothimage
-          .media__title EXHIBITION BOOTH
-          p 8' X 10' - $2,500
-          p
-            | More space and a big display means more attention from a busy audience.
-            | Includes pipe-and-drape, a large table and chairs, Wifi and lunch
-            | vouchers for both days.
+          .media__title=sponsor.boothName
+          p=sponsor.boothSize
+          p=sponsor.boothCopy
           .media__button APPLY
 
       a(href='https://continuumsf.wufoo.com/forms/mw702z0x8snqp/')
         .media.topborder
           .tableimage
-          .media__title EXHIBITION TABLE
-          p 6' x 2.5' - $1,500
-          p
-            | Showcase your company to 1,000 visitors from around the world with a 
-            | table display. Includes a large table, chairs, Wifi access and
-            | lunch vouchers for both days.
+          .media__title=sponsor.tableName
+          p=sponsor.tableSize
+          p=sponsor.tableCopy
           .media__button APPLY
 

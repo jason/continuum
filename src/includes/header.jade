@@ -3,8 +3,10 @@ header
     li.logo
       a(href="#home")
         img(src="images/csf-asset-navlogo.png" width="275" height="50")
-    each name, url in {'schedule':'SCHEDULE', 'sponsor':'SPONSOR', 'location':'LOCATION', 'about':'ABOUT'}
+    li
+      a(href="")=header.language
+    each name, url in {'sponsor':header.sponsor, 'location':header.location, 'about':header.about}
       li(data-menuanchor="#{url}")
         a(href="##{url}") #{name}
     li
-      a.register(href='#tickets') TICKETS
+      a.register(href='#tickets')=header.tickets
