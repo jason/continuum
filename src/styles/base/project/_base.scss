@@ -2,6 +2,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
 $black: #000;
 $blue: rgb(36, 101, 156);
@@ -11,9 +12,10 @@ $gold: hsla(50, 81%, 50%, 1);
 $grey: rgb(129, 129, 129);
 $lightblue: rgb(239, 245, 247);
 $lightgrey: rgb(180, 180, 180);
-$lightgray: rgb(232,232,232);
+$lightgray: rgb(232, 232, 232);
 $offwhite: rgb(241, 241, 241);
 $aqua: hsla(185, 30%, 80%, 1);
+$open-sans: 'Open Sans', sans-serif;
 $pt-sans: 'PT Sans', sans-serif;
 $pt-serif: 'PT Serif', serif;
 $white: #fff;
@@ -21,6 +23,10 @@ $white: #fff;
 @mixin column {
   display: flex;
   flex-direction: column;
+}
+
+.vmiddle {
+  vertical-align: middle;
 }
 
 %flex {

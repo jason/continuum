@@ -7,16 +7,25 @@
 
   img {
     display: block;
-    padding-top: 5rem;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    padding-bottom: .5rem;
+    padding-top: 5rem;
 
   }
+
+  &__head {
+    color: $offwhite;
+    flex: 1 0 100%;
+    font: 300 1.5rem $open-sans;
+    text-align: center;
+  }
+
   &__date {
+    color: $offwhite;
     flex: 1 0 100%;
     font-size: 1.5rem;
-    color: $offwhite;
-    padding-top: 4rem;
+    padding-top: 6rem;
     text-align: center;
   }
 }

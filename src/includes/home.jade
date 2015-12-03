@@ -1,11 +1,11 @@
 .section#home
 	.banner
-		img(src="images/csf-asset-logo-hero.png" width="346" height="300")
-		p this is a test
+		img(src="#{images}images/csf-asset-logo-hero.png" width="400" height="237.5")
+		.banner__head=home.heroSubHead
 		.banner__date=home.when
 
 	.l-section.l-constrained
-			img.large-icon(src='images/chinasf---icon-0.png', height='177', width='160')
+			img.large-icon(src='#{images}images/chinasf---icon-0.png', height='177', width='160')
 			h1=home.headline
 			p=home.describe
 	.l-section.l-constrained
@@ -13,12 +13,10 @@
 		p=home.subSectionCopy
 		ul.l-split
 			li
-				img(src='images/chinasf---icon-1.png', height='150', width='150', alt='')
+				img(src='#{images}images/chinasf---icon-1.png', height='150', width='150', alt='')
 				p=home.techCopy
 			li
-				img(src='images/chinasf---icon-2.png', height='150', width='150', alt='')
+				img(src='#{images}images/chinasf---icon-2.png', height='150', width='150', alt='')
 				p
 					p=home.servicesCopy
-			li
-				img(src='images/chinasf---icon-3.png', height='150', width='150', alt='')
-				p=home.cgCopy
+			

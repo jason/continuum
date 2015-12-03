@@ -1,26 +1,26 @@
 .section#sponsor
     h1=sponsor.h1
   .l-section.l-constrained
-    img.large-icon(src='images/csf-icon-sponsors.png' height="100.5" width="100.5")
+    img.large-icon(src='#{images}images/csf-icon-sponsors.png' height="100.5" width="100.5")
     p !{sponsor.h1Copy}
   .l-section.l-constrained
     h1=sponsor.h2
-    img.large-icon(src='images/csf-icon-exhibit.png' height="100.5" width="100.5")
+    img.large-icon(src='#{images}images/csf-icon-exhibit.png' height="100.5" width="100.5")
     p=sponsor.h2Copy
     .l-split
-      a(href='https://continuumsf.wufoo.com/forms/z24x9uh1tboczn/')
+      a(href=sponsor.boothWuFoo)
         .media.topborder
           .boothimage
           .media__title=sponsor.boothName
           p=sponsor.boothSize
           p=sponsor.boothCopy
-          .media__button APPLY
+          .media__button=sponsor.apply
 
-      a(href='https://continuumsf.wufoo.com/forms/mw702z0x8snqp/')
+      a(href=sponsor.tableWuFoo)
         .media.topborder
           .tableimage
           .media__title=sponsor.tableName
           p=sponsor.tableSize
           p=sponsor.tableCopy
-          .media__button APPLY
+          .media__button=sponsor.apply
 

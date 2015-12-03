@@ -1,5 +1,5 @@
 .section#location
-  img.large-icon(src="images/csf-icon-location.png" height="100.5" width="100.5")
+  img.large-icon(src="#{images}images/csf-icon-location.png" height="100.5" width="100.5")
   h1=locate.h1
   .l-section.l-constrained
     .media
@@ -7,14 +7,14 @@
       p=locate.venueCopy1
       p=locate.venueCopy2
       p=locate.venueCopy3
-      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12609.703927352788!2d-122.40805318576662!3d37.80349007408186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f62abd65a5%3A0xcdd8de76108b3b78!2sPier+27!5e0!3m2!1sen!2sus!4v1435679589759" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen)
+      iframe(src=locate.venueMapURL width="100%" height="250" frameborder="0" style="border:0" allowfullscreen)
     .l-split
       .media
         .media__title=locate.visaTitle
         p !{locate.visaCopy}
         //h=216 w=420
-        img(src='images/csf-asset-visa.png' height='100%' width='100%')
+        img(src='#{images}images/csf-asset-visa.png' height='100%' width='100%')
       .media
         .media__title=locate.bookingTitle
         p !{locate.bookingCopy}
-        img(src='images/csf-asset-hotel.png' height='100%' width='100%')
+        img(src='#{images}images/csf-asset-hotel.png' height='100%' width='100%')

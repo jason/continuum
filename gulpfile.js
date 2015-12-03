@@ -28,34 +28,31 @@ gulp.task('js', function() {
         .pipe(gulp.dest(dest + 'js'));
 });
 
-gulp.task('templates', function() {
-  return gulp.src('./src/*.jade')
-    .pipe(data( function(file) {
-                  return require('./src/data/english.json');
-                } ))
-    .pipe(jade())
-    .pipe(gulp.dest('./dest/'));
+gulp.task('chinese', function () {
+    gulp.src('src/*.jade')
+//    .pipe(plugins.data( function(file) {
+//        return require('./src/data/english.json');
+//    } ))
+    .pipe(plugins.jade({
+        locals: require('./src/data/chinese.json')
+  }))
+    .pipe(gulp.dest('build/ch'))
+    .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('html', function () {
 	gulp.src('src/*.jade')
-    .pipe(plugins.data( function(file) {
-        return require('./src/data/english.json');
-    } ))
-    .pipe(plugins.jade())
+//    .pipe(plugins.data( function(file) {
+//        return require('./src/data/english.json');
+//    } ))
+    .pipe(plugins.jade({
+        locals: require('./src/data/english.json')
+  }))
 	.pipe(gulp.dest('build'))
     .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('chinese', function () {
-    gulp.src('src/*.jade')
-    .pipe(plugins.data( function(file) {
-        return require('./src/data/chinese.json');
-    } ))
-    .pipe(plugins.jade())
-    .pipe(gulp.dest('build/ch'))
-    .pipe(browserSync.reload({stream: true}));
-});
+
 
 gulp.task('browser-sync', function() {
 	browserSync({

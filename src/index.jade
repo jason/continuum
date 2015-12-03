@@ -1,9 +1,9 @@
 doctype html
 html(lang='en')
   head
-    title ContinuumSF 2015 Tech &amp; Trade Expo
-    link(rel='stylesheet' href='./css/style.css')
-    script(src="./js/main.js")
+    title !{head.title}
+    | !{head.style}
+    | !{head.js}
   body
     include ./includes/header.jade
     include ./includes/home.jade

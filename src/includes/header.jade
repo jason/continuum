@@ -2,9 +2,9 @@ header
   ul
     li.logo
       a(href="#home")
-        img(src="images/csf-asset-navlogo.png" width="275" height="50")
+        img(src="#{images}images/csf-asset-navlogo.png" width="275" height="50")
     li
-      a(href="")=header.language
+      | !{header.language}
     each name, url in {'sponsor':header.sponsor, 'location':header.location, 'about':header.about}
       li(data-menuanchor="#{url}")
         a(href="##{url}") #{name}
