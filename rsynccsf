@@ -1,0 +1,1 @@
+rsync -avz -e ssh /Users/jason/Projects/continuumsf/build ubuntu@i5labs.com:

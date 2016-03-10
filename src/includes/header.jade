@@ -4,9 +4,9 @@ header
       a(href="#home")
         img(src="#{images}images/csf-asset-navlogo.png" width="275" height="50")
     li
-      | !{header.language}
-    each name, url in {'sponsor':header.sponsor, 'location':header.location, 'about':header.about}
+      a.register(href='#tickets')=header.tickets
+    each name, url in {'schedule':header.schedule, 'sponsor':header.sponsor, 'location':header.location, 'about':header.about}
       li(data-menuanchor="#{url}")
         a(href="##{url}") #{name}
     li
-      a.register(href='#tickets')=header.tickets
+      | !{header.language}

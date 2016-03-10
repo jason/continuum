@@ -23,13 +23,24 @@
     margin-left: auto;
     margin-right: auto;
   }
-
+  ul {
+  }
   li {
-    margin: 0 4em 3em 0;
+    margin: 0 0em 3em 0;
     max-width: 33%;
   }
 }
 
 .section {
   padding-top: 2.5rem;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
